@@ -10,9 +10,8 @@ namespace ownListNode
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
-
-            Console.ReadKey();
+            Console.WriteLine("New Line");
+            Console.ReadLine();
         }
     }
 }
