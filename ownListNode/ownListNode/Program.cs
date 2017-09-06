@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ownListNode
 {
@@ -10,8 +6,27 @@ namespace ownListNode
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("New Line");
-            Console.ReadLine();
+            ListNode l1 = new ListNode();
+            l1.AddFirst(3);
+            l1.AddFirst(4);
+            l1.AddFirst(2);
+            Console.WriteLine();
+            l1.PrintList();
+
+
+            ListNode l2 = new ListNode();
+            l2.AddFirst(4);
+            l2.AddFirst(6);
+            l2.AddFirst(5);
+            Console.WriteLine();
+            l2.PrintList();
+
+            Console.WriteLine("The Result:");
+            Solution s = new Solution();
+            ListNode res = s.AddListNode(l1, l2);
+            res.PrintList();
+
+            Console.ReadKey();
         }
     }
 }
