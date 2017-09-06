@@ -68,13 +68,14 @@ namespace ownListNode
                 Console.WriteLine("ListNode is empty");
             else
             {
+                Console.WriteLine("head:");
                 while (current != null)
                 {
                     Console.Write(current.val.ToString() + " ");
                     current = current.next;
                     Console.Write("->");
                 }
-                Console.WriteLine("NULL");
+                Console.WriteLine("tail");
             }
         }
     }
