@@ -11,6 +11,7 @@ namespace ownListNode
             l1.AddFirst(4);
             l1.AddFirst(2);
             Console.WriteLine();
+            Console.Write("First ListNode:");
             l1.PrintList();
 
 
@@ -19,9 +20,11 @@ namespace ownListNode
             l2.AddFirst(6);
             l2.AddFirst(5);
             Console.WriteLine();
+            Console.Write("Second ListNode:");
             l2.PrintList();
 
-            Console.WriteLine("The Result:");
+            Console.WriteLine();
+            Console.Write("The Result:");
             Solution s = new Solution();
             ListNode res = s.AddListNode(l1, l2);
             res.PrintList();
