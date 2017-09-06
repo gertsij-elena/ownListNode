@@ -68,7 +68,8 @@ namespace ownListNode
                 Console.WriteLine("ListNode is empty");
             else
             {
-                Console.WriteLine("head:");
+                Console.WriteLine();
+                Console.Write("head:");
                 while (current != null)
                 {
                     Console.Write(current.val.ToString() + " ");
